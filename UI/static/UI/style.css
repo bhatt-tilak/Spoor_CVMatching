@@ -1,0 +1,41 @@
+/*body{
+	background: white;
+}*/
+
+.navbar{
+	border-radius: 0;
+}
+
+.navbar-brand{
+	font-family: 'Satisfy', cursive;
+	font-size: 16;
+}
+
+.rating {
+		unicode-bidi: bidi-override;
+		direction: rtl;
+}
+
+label {
+	display: inline-block;
+	cursor: pointer;
+}
+
+input[type=radio] {
+	display: none;
+}
+
+label:before {
+	content="";
+	display: inline-block;
+	position: absolute;
+}
+
+input[type=radio] {
+	content: "\2606";
+}
+
+input[type=radio]:checked + label:before {
+	content: "\2605";
+}
+
